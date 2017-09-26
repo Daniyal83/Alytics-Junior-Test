@@ -1,0 +1,17 @@
+.task {
+   margin: 10px;
+   padding: 5px;
+   background: #f2a286;
+   border: 1px solid #00b217;
+   border-radius: 10px;
+}
+
+.task::before {
+  counter-increment: tasks;
+  content: counter(tasks);
+  margin-right: 10px;
+}
+
+.tasks {
+	counter-reset: tasks;
+}
